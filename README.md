@@ -1,4 +1,5 @@
 
+
 # What is Crawlson?
 
 Crawlson monitors popular real estate aggregators and agencies and notifies users about new houses according to their preferences. 
@@ -38,14 +39,14 @@ To change maximum house price use **/setmaxprice** command.  The price is a numb
 >/setmaxprice 500000
 
 Sets maximum house price to 500 k.k. euros.
-<br/>
+<br></br>
 
 ### Changing minimum price
 To change minimum house price use **/setminprice** command.  For example:
 >/setminprice 500000
 
 Sets minimumm house price to 500 k.k. euros.
-<br/>
+<br></br>
 
 
 ### Changing the minimum construction year
@@ -54,7 +55,7 @@ To change minimum construction year use **/setminconstryear** command.  For exam
 >/setminconstryear 1990
 
 Sets minimum construction year to 1990.
-<br/>
+<br></br>
 
 ### Changing cities 
 
@@ -62,7 +63,7 @@ To change cities filter use **/setcities** command. For example:
 >/setcities Eindhoven, Helmond, Veghel
 
 Note: new value will overwrite previous value so you need to type a full and complete list of cities.
-<br/>
+<br></br>
 
 
 ### Changing minimum living area plot size
@@ -71,7 +72,7 @@ To change minimum living area plot size  use **/setminlivingarea** command.  The
 >/setminlivingarea 110
 
 Sets minimum living area to 110 square meters.
-<br/>
+<br></br>
 
 ### Configuring location preferences
 The travel address setting enables you to find house in a very specific location within any city. For example, it can allow you to search for house that is no more than 20 minutes walking distance from the central station, or to search for house that is no more than 10 kilometers away from the international school.
@@ -79,14 +80,14 @@ The travel address setting enables you to find house in a very specific location
 You can set only one travel address and **this setting will only work if you configure travel address, travel time or travel distance and commute mode**.
 
 Below, you can find step by step instruction how to setup this setting correctly.
-<br/>
+<br></br>
 
 #### Step #1 | Setting Travel Address
 To set a travel address use **/settraveladdress** command where the value is the full address, for example:
 >/settraveladdress Eindhoven Centraal, 5612 AZ Eindhoven
 
 Once the address is set, its time to define the distance and/or the travel time settings.
-<br/>
+<br></br>
 
 #### Step #2 | Setting Commute Mode
 Set how do you commute. It used to measure the maximum commute time from the house to the travel address. 
@@ -97,20 +98,20 @@ To set commute mode use **/setcommutemode** command, for example:
 > /setcommutemode driving
 
 Would set commute type to driving.
-<br/>
+<br></br>
 
 #### Step #3 | Set maximum commute time or maximum distance
 You can decide to set both or one of the following filters:
 - Maximum time needed to reach the house from travel address using selected commute mode
 - Maximum distance from the travel address to the house using commute mode
-<br/>
+<br></br>
 
 ##### Maximum Travel time
 To set maximum travel time use **/setmaxtraveltime** command. The value is in minutes. Note that this travel time is based on commute mode you've selected. This an example of how you can configure this value:
 > /setmaxtraveltime 60
 
 It  would set maximum travel time to 60  minutes. 
-<br/>
+<br></br>
 ##### Maximum Travel distance
 To set maximum travel distance use **/setmaxdistance** command. The value is in kilometers. Note that the distance is calculated based on selected commute mode. For example, for commute mode 'driving' - distance will be a car road length. If you want to have pure radius distance, configure commute mode to 'walking'.
 
@@ -118,10 +119,15 @@ This an example how to configure this setting:
 > /setmaxdistance 10
 
 It would set maximum travel distance to 10 kilometers.
-<br/>
+<br></br>
 Note: You can define both distance and time settings at the same time. In that case you will receive notification only if both conditions are satisfied.
+<br></br>
+
+## Bugs, questions, improvement ideas?
+I am always open to help, write me in Telegram, my username @teoring.
+<br></br>
 
 
-# What sources Crawlson monitors?
+## What sources Crawlson monitors?
 Crawlson monitors following sources: [funda.nl](https://funda.nl/ "https://funda.nl"), [pararius.nl](https://pararius.nl/ "https://pararius.nl"), [vbo.nl](https://vbo.nl/ "https://vbo.nl"), [jaap.nl](https://jaap.nl/ "https://jaap.nl"), [huislijn.nl](https://huislijn.nl/ "https://huislijn.nl"), [maasmakelaars.nl](https://maasmakelaars.nl/ "https://maasmakelaars.nl"), [hypodomus-eindhoven.nl](https://hypodomus-eindhoven.nl/ "https://hypodomus-eindhoven.nl"), [hendriks.nl](https://hendriks.nl/ "https://hendriks.nl"), [vanuffelen.nl](https://vanuffelen.nl/ "https://vanuffelen.nl"), [vbtmakelaars.nl](https://vbtmakelaars.nl/ "https://vbtmakelaars.nl"), [alberti.nl](https://alberti.nl/ "https://alberti.nl"), [raadhage.nl](https://raadhage.nl/ "https://raadhage.nl"), [dpmrobvandelaar.nl](https://dpmrobvandelaar.nl/ "https://dpmrobvandelaar.nl"), [woonplezier.nl](https://woonplezier.nl/ "https://woonplezier.nl"), [makelaardevree.nl](https://makelaardevree.nl/ "https://makelaardevree.nl"), [heuvel.nl](https://heuvel.nl/ "https://heuvel.nl"), [kinmakelaars.nl](https://kinmakelaars.nl/ "https://kinmakelaars.nl"), [kranenmakelaardij.nl](https://kranenmakelaardij.nl/ "https://kranenmakelaardij.nl"), [erafocus.nl](https://erafocus.nl/ "https://erafocus.nl"), [huibers.nl](https://huibers.nl/ "https://huibers.nl"), [vansantvoort.nl](https://vansantvoort.nl/ "https://vansantvoort.nl"), [slippensvermeer.nl](https://slippensvermeer.nl/ "https://slippensvermeer.nl"), [hendrixhuybregts.nl](https://hendrixhuybregts.nl/ "https://hendrixhuybregts.nl"), [mgmmakelaardij.nl](https://mgmmakelaardij.nl/ "https://mgmmakelaardij.nl"), [edwillems.nl](https://edwillems.nl/ "https://edwillems.nl"), [ligtvoetmakelaardij.nl](https://ligtvoetmakelaardij.nl/ "https://ligtvoetmakelaardij.nl"), [metselaarsmakelaardij.nl](https://metselaarsmakelaardij.nl/ "https://metselaarsmakelaardij.nl"), [dekoningmakelaardij.nl](https://dekoningmakelaardij.nl/ "https://dekoningmakelaardij.nl"), [makelaardijolav.nl](https://makelaardijolav.nl/ "https://makelaardijolav.nl"), [kernmakelaars.nl](https://kernmakelaars.nl/ "https://kernmakelaars.nl"), [hartvanbrabantmakelaardij.nl](https://hartvanbrabantmakelaardij.nl/ "https://hartvanbrabantmakelaardij.nl"), [lemmens.nl](https://lemmens.nl/ "https://lemmens.nl"), [huispedia.nl](https://huispedia.nl/ "https://huispedia.nl"), [hansvanberkel.nl](https://hansvanberkel.nl/ "https://hansvanberkel.nl"), [vmg-makelaars.nl](https://vmg-makelaars.nl/ "https://vmg-makelaars.nl"), [broekx.nl](https://broekx.nl/ "https://broekx.nl"), [era.nl](https://era.nl/ "https://era.nl").
 
