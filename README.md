@@ -1,5 +1,3 @@
-
-
 # What is Crawlson?
 
 Crawlson monitors popular real estate aggregators and agencies and notifies users about new houses according to their preferences. 
