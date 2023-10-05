@@ -7,7 +7,7 @@ It takes Crawlson only 6 minutes to visit over 40 different web-sites of makelaa
 # Set your preferences
 It is important to configure your preferences correctly. If you skip this step you might receive irrelevant notifications.
 
-All settings can be changed in Crawlson telegram channel chat window.
+All settings can be changed in Crawlson telegram channel chat.
 
  To view your current settings type:
 > /settings
@@ -49,7 +49,7 @@ To change minimum construction year use **/setminconstryear** command.  For exam
 
 #### Changing cities 
 
-To change minimum construction year use **/setcities** command.  For example:
+To change cities filter use **/setcities** command. For example:
 >/setcities Eindhoven, Helmond, Veghel
 
 Note: new value will overwrite previous value so you need to type a full and complete list of cities.
@@ -66,13 +66,15 @@ The travel address setting enables you to find house in a very specific location
 
 You can set only one travel address and **this setting will only work if you configure travel address, travel time or travel distance and commute mode**.
 
-Below, you can find step by step instruction how to configure this.
+Below, you can find step by step instruction how to setup this setting correctly.
+
 
 ##### Step #1 | Setting Travel Address
 To set a travel address use **/settraveladdress** command where the value is the full address, for example:
 >/settraveladdress Eindhoven Centraal, 5612 AZ Eindhoven
 
 Once the address is set, its time to define the distance and/or the travel time settings.
+
 
 ##### Step #2 | Setting Commute Mode
 Set how do you commute. It used to measure the maximum commute time from the house to the travel address. 
@@ -84,18 +86,20 @@ To set commute mode use **/setcommutemode** command, for example:
 
 Would set commute type to driving.
 
+
 ##### Step #3 | Set maximum commute time or maximum distance
 You can decide to set both or one of the following filters:
 - Maximum time needed to reach the house from travel address using selected commute mode
 - Maximum distance from the travel address to the house using commute mode
+- 
 
-##### Maximum Travel time
+###### Maximum Travel time
 To set maximum travel time use **/setmaxtraveltime** command. The value is in minutes. Note that this travel time is based on commute mode you've selected. This an example of how you can configure this value:
 > /setmaxtraveltime 60
 
 It  would set maximum travel time to 60  minutes. 
 
-##### Maximum Travel distance
+###### Maximum Travel distance
 To set maximum travel distance use **/setmaxdistance** command. The value is in kilometers. Note that the distance is calculated based on selected commute mode. For example, for commute mode 'driving' - distance will be a car road length. If you want to have pure radius distance, configure commute mode to 'walking'.
 
 This an example how to configure this setting:
