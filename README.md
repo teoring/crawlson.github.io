@@ -15,7 +15,7 @@ All settings can be changed in Crawlson telegram channel chat.
 To see a list of available commands type:
 >/help
 
-Note: In certain cases Crawlson still might decide to send you house notification even if it doesn't match the setting. That's because it is now always possible for Crawlson to determine certain house parameters from the house page.
+Note: In certain cases Crawlson still might decide to send you house notification even if it doesn't match the setting. That's because it isn't always possible for Crawlson to determine certain house parameters from the house page.
 
 ## Available settings overview
 Following filters can be set to refine house notifications you are receiving:
